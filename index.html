@@ -10,11 +10,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
+<style>
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+
+/* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 .video_container {
     overflow: hidden;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -24,6 +39,7 @@
 
 .video_container video {
     position: absolute;
+	background-attachment: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -70,17 +86,16 @@
 					<!-- About -->
 					<article id="about">
 						<h2 style="text-align:center">About The Game</h2>
-						<p>Catastrophic Inversion is a multiplayer VR arena shooter playable at full-scale in any gym or other large space. <i>You really walk around the space</i> without joysticks, teleporting, or other unnatural-feeling locomotion.</p>
-						<video preload="auto" autoplay="" muted="" loop="" id="heroVideo" width="100%">
-							<source src="images/ShortLoop.mp4" type="video/mp4">
-							Your browser does not support HTML5 Video.
-						</video>
-						<p><br>It comes with 10 arenas (and counting) with moving parts like elevators to take you to second-story platforms or gondolas to carry you across large chasms, all while allowing multiple players to move around within the same playspace. (We've tested up to 10 players but there's no hard limit.)</p>
+						<p>Catastrophic Inversion is a multiplayer VR arena shooter you play in a gym or other large space by really walking. No joysticks or teleporting.</p>
+						<div class="aspect-ratio">
+							<iframe width=100% height=100% src="https://www.youtube.com/embed/dBjqVvGsyEc?si=QrvkIqG1FY29wP6r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<p><br>It comes with 10 virtual arenas (and counting) with moving parts like <b>elevators</b> to take you to second-story platforms or <b>gondolas</b> to carry you across chasms, all while allowing multiple players to move around within the same playspace. (We've tested up to 10 players but there's no hard limit.)</p>
 						<video preload="auto" autoplay="" muted="" loop="" id="heroVideo" width="100%">
 							<source src="images/MovingMaps.mp4" type="video/mp4">
 							Your browser does not support HTML5 Video.
 						</video>
-						<p><br>Calibration is handled entirely within the Quest headset and requires no external sensors or equipment (other than adequate Wi-Fi coverage for a local network connection between devices). Setup involves a one-time walk around the perimeter of the space by the host and definition of 2 calibration points to be touched by all players to align the headsets.</p>
+						<p><br>Alignment is handled entirely within the Quest headset and requires no external sensors or equipment (other than adequate Wi-Fi coverage for a local network connection between devices). Setup involves a one-time walk around the perimeter of the space by the host and definition of 2 calibration points to be touched by all players to align the headsets.</p>
 					</article>
 
 						<!-- get -->
@@ -94,8 +109,8 @@
 							</div>
 							<span class="image main"><img src="images/Space.png" alt="" /></span>							
 							<ul>
-								<li>A few <b>Meta Quest 2, 3, or 3S headsets</b> with the <a href="https://www.meta.com/experiences/catastrophic-inversion/7360338234075836/">Meta Quest edition of the game</a>.</li>
-								<li>A <b>14m x 24m playspace</b> (79' x 46') or larger. (There are also some simpler 10m x 10m maps if you don't have that much space.)</li>
+								<li><b>Meta Quest 2, 3, or 3S headsets</b> for each player with the <a href="https://www.meta.com/experiences/catastrophic-inversion/7360338234075836/">Quest edition of the game</a>.</li>
+								<li>A <b>14m x 24m (79' x 46') playspace</b> or larger. (There are also some simpler 10m x 10m maps if you don't have that much space.)</li>
 								<li>Consistent <b>Wi-Fi coverage</b> throughout your space. (Internet access recommended, but not required.)</li>
 								<li>A mid-range <b>gaming laptop</b> with the <a href="https://store.steampowered.com/app/3620680/Catastrophic_Inversion/">Steam edition of the game</a> as a dedicated server and spectator feed. (A headset could host if needed, but it's less reliable.')</li>
 							</ul>
@@ -105,9 +120,9 @@
 						
 						<!-- events -->					
 						<article id="events">
-							<h2 style="text-align:center">Ucoming Events</h2>
-							<p><b>October 11, 2025:</b> Catastrophic Inversion will be available to play in a 4,000 square foot playspace at the <a href="https://thegamingoutsider.com/r2v2-2025/">Rock River Valley Video Game Convention (R2V2)</a> in Rockford Illinois. 
-							<span class="image main"><img src="images/R2V2Space.png" alt="" /></span></p>
+							<h2 style="text-align:center">Upcoming Events</h2>
+							<p><b>October 11, 2025:</b> Catastrophic Inversion will be available to play in a 4,000 square foot playspace at the <a href="https://thegamingoutsider.com/r2v2-2025/">Rock River Valley Video Game Convention (R2V2)</a> in Rockford Illinois. <br>If you're in the area, you don't want to miss this event. There will be free-play arcade machines, a huge playable classic video game library, game tournaments, games and memorabilia for sale, and a live video game music concert.</p>
+							<span class="image main"><img src="images/R2V2Space.png" alt="" /></span>
 						</article>
 
 						<!-- About -->
