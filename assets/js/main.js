@@ -259,6 +259,13 @@
 						// Hide article, main.
 							$article.hide();
 							$main.hide();
+							try {
+								document.getElementById("heroVideo").play()
+							}
+							catch(err) {
+								
+								}
+							
 
 						// Show footer, header.
 							$footer.show();
@@ -292,7 +299,7 @@
 				var $this = $(this);
 
 				// Close.
-					$('<div class="close" onclick=document.getElementById("heroVideo").play()>Close</div>')
+					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
