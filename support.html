@@ -128,41 +128,7 @@
 										</details>
 									</div>
 								</details>
-								<details>
-									<summary>I can't make the boundary big enough to play.</summary>
-									<div style="margin-left:10%;">
-										The Meta Guardian Boundary maxes out at 10m x 10m. We have a few 10m x 10m arenas you can play by setting up overlapping Guardians, but to play the larger arenas in shared space, you will need to disable the Meta Guardian Boundary. To do this, you have 2 options:
-										<details>
-											<summary>Manual Guardian Toggle</summary>
-											<div style="margin-left:10%;">
-												If you put your headset in Developer Mode (which anyone can do following <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions from the Meta Website</a>) you will have a new option in the settings to disable Physical Space Features.<br>
-												This is the only way to play the largest maps, but since <b  style="color: red;">this removes some of the safeguards Meta has in-place, it carries some risk</b>, which you bear the responsibility for.<br>
-												If you do not re-enable Physical Space Features when you're done, <b  style="color: red;">you will not have a guardian (or any warning that you're missing one)</b> in other games that depend on them.
-
-											</div>
-										</details>
-										<details>
-									<summary>Auto-Disable Boundary</summary>
-									<div style="margin-left:10%;">
-										We made a version of the game that will automatically turn off the boundary for you in-game so you will not have to remember to turn it back on for other games. 
-										<ul><li>If you are playing in spaces larger than 24m x 14m (only needed for our 3 biggest Arenas), you will start to see pop-ups saying you've "Moved Too Far". In our testing, these pop-ups do not appear to mess with alignment, so you can either ignore these, or once-again disable Physical Space Features, <b  style="color: red;">which you will again need to remember to enable for other games</b>.<br></li>
-										<li>Since the boundary is completely disabled in this version, we have disabled Stationary/Roomscale Mode for safety.</li>
-										</ul>
-										Unfortunately Meta restricts which developers are able to publish boundaryless apps to the store, so we are not yet allowed to publish this version via traditional methods.<br>
-										To use this version, you can switch to the RC Channel after you purchase the game:
-										<ol>
-											<li>Open the Quest app menu, click the menu button on the Catastrophic Inversion card.</li>
-											<li>Select Settings</li>
-											<li>Click Release Channels</li>
-											<li>Select RC</li>
-											<li>Wait for the RC version of the game to install.</li>
-											<li>You will now be on this version of the game until you switch back to the Live channel.</li>
-										</ol>
-										<span class="image main"><img src="images/JoinRC.png" alt="" /></span>
-									</div>
-								</details>
-									</div>
-								</details>
+								<a href="#fullscale">I can't make the boundary big enough to play the game.</a>
 								<details>
 									<summary>I keep getting a message saying I've moved too far</summary>
 									<div style="margin-left:10%;">
@@ -210,6 +176,43 @@
 							<article id="contact">
 								<h2>Contact</h2>
 								Any issues that you can't resolve using the articles on this webpage can be emailed to <a href ="mailto:support@toastidwaffel.com">support@toastidwaffel.com</a>. We will do our best to help you.
+							</article>
+
+							<article id="fullscale">
+								<h2>Playing in a Large Space</h2>
+								To keep you safe while playing VR games in a small space, the Meta Quest has a feature called the Guardian Boundary, which provides an in-game grid wall to tell you when you're leaving your designated playspace.
+								<span class="image main"><img src="images/Boundary.png" alt="" /></span>
+								You may use Catastriphic Inversion with the Guardian enabled as a traditional standing/roomscale game... <b>but</b> we built it to be a game you could take to a gym and really move around in. 
+								<span class="image main"><img src="images/Space.png" alt="" /></span>
+								Our game has its own boundary system that allows you to define the edges of your safe playspace, and it will automatically align maps within that space. It will only allow you to play maps that are the same size as (or smaller than) your space.<br>
+								We have a few maps that fit within the max Guardian size of 10m x 10m, <b>but the best maps require the Guardian to be disabled.</b><br><br>We built a version of the game that <b>automatically disables the Guardian <i>for our game only</i></b> (leaving it
+								enabled for other games) but as a smaller <i>unproven</i> developer, Meta does not allow us to publish this version to the main channel on the store yet. If you wish to play in a large space, you will need to do a little bit of
+								work yourself. It is worth saying that <b  style="color: red;">this removes some of the safeguards Meta has in-place. It carries some risk, which you bear the responsibility for.</b> Though we have done everything we can to make the game safe, without that os-level safeguard, headsets can (on rare occasions) come unaligned, and players have collided with other players and with walls. So far, no headsets have been damaged and no players have been severely injured.<br>
+								<br>If you choose to proceed, there's an easy way and a hard way.<br><br>
+								<details>
+								<summary><b>The Easy Way</b></summary>
+								Games on Meta Quest can have different release channels, allowing players to opt-in to testing different versions of the game. We've put our boundaryless version of the game on the RC Channel. You can switch to the RC channel from the game's settings in the App menu in the Meta Quest home.
+								<span class="image main"><img src="images/JoinBoundaryless.png" alt="" /></span>
+								Please Note:
+								<ul>
+								<li>This version of the game will not allow you to play in standing/roomscale because the boundary is permanently disabled. You will need to switch back to the <b>Live</b> channel to play stationary.</li>
+								<li>When travelling ~25m with the boundary automatically disabled, there's an OS-level pop-up saying "you've travelled too far". You can ignore it and pop back into the game, but this takes you out of the experience and can get kind of annoying.<br>
+								Our basketball-court-sized 14m x 24m maps are small enough to avoid this message, but if you want to play the biggest maps, you will need to opt for the hard way.</li>
+								</ul>
+								</details>
+								<br>
+								<details>
+								<summary><b>The Hard Way</b></summary>
+								Putting your headset in Developer Mode allows a host of new features that you couldn't previously do. This includes sideloading apps from unofficial stores, modding existing apps, and <b>manually disabling the Guardian Boundary</b>.
+								Anyone can put their headset in Developer Mode. <i>You do not have to be a developer</i>. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.) <br>You can follow <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions on the Meta Website</a>.
+								<br><br>
+								Once your headset is in Developer Mode, you can disable the boundary by going to the <b> Settings App > Advanced > Disable Physical Space Features</b>.<br>
+								Please note:
+								<ul>
+								<li>Once your boundary is disabled <b  style="color: red;">it will be disabled in ALL games. You will not get a warning that it isn't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable it when you stop playing Catastrophic Inversion. We provide a warning when you are switching to stationary mode, and when clicking the <i>Quit</i> button in-game, but if you simply close the game, you will receive no such warning.</li>
+								</ul>
+								</details>
+								
 							</article>
 
 					</div>
