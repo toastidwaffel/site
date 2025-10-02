@@ -128,13 +128,31 @@
 										</details>
 									</div>
 								</details>
-								<a href="#fullscale">I can't make the boundary big enough to play the game.</a>
 								<details>
-									<summary>I keep getting a message saying I've moved too far</summary>
-									<div style="margin-left:10%;">
-										You are likely playing in the Boundaryless edition of the game. Unfortunately Meta can't simply let it be boundaryless. This is a system-level warning and we can't turn it off for you.<br><br>
-										In our testing, these pop-ups do not appear to mess with alignment, so you can ignore these, only play in spaces smaller than 24m x 14m, or disable Physical Space Features (see above), <b  style="color: red;">which you will again need to remember to enable for other games</b>.
-									</div>
+								<summary>I can't use the joystick to move or teleport'</summary>
+								<div style="margin-left:10%;">
+								Catastrophic Inversion disables the Guardian Boundary temporarily to allow you to play in much larger spaces, using its own boundary system which measures your space and lines up appropriately sized maps. The boundary is re-enabled when the game is closed.
+								<span class="image main"><img src="images/SmallVsLarge.png" alt="" /></span>
+								Due to the boundary being disabled, we have disabled Joystick and teleport locomotion in this version of the game.<br>
+								Games on Meta Quest can have different release channels, allowing players to opt-in to testing different versions of the game. We've put a traditional version of the game with joysticks and teleporting on the RC Channel. You can switch to the RC channel from the game's settings in the App menu in the Meta Quest home.
+								<span class="image main"><img src="images/JoinBoundaryless.png" alt="" /></span>
+								We plan to merge both of these features in a future version of the game so you do not need to switch back and forth.<br>
+								</div>
+								</details>
+								
+<details>
+								<summary>Players are receiving pop-ups saying <i>"You've moved too far"</i></summary>
+								<div style="margin-left:10%;">
+								Unfortunately Meta's boundaryless mode still doesn't want you walking too far from the start. These pop-ups go away almost entirely if you power up the headsets from the middle of your playspace (we have found most success by storing the headsets on a table just outside of bounds on the long edge of our space.)
+								<span class="image main"><img src="images/IdealSpaceSetup.png" alt="" /></span>
+								If you are playing in a particularly large space or have to store your headsets farther away, these pop-ups may be unavoidable. They don't generally cause any major issues beyond an annoyance, so you can just close them and keep on playing, or you can completely eliminate them by <i><b>fully disabling physical space features through developer mode.</i></b> <br><br>
+								Putting your headset in Developer Mode allows a host of new features that you couldn't previously do. This includes sideloading apps from unofficial stores, modding existing apps, and <b>manually disabling the Guardian Boundary</b>.
+								Anyone can put their headset in Developer Mode. <i>You do not have to be a developer</i>. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.) <br>You can follow <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions on the Meta Website</a>.
+								<br><br>
+								Once your headset is in Developer Mode, you can disable the boundary by going to the <b> Settings App > Advanced > Disable Physical Space Features</b>.<br>
+								<br>
+								Once your boundary is disabled <b  style="color: red;">it will be disabled in ALL games. You will not get a warning that it isn't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable it when you stop playing Catastrophic Inversion.
+								</div>
 								</details>
 							</article>
 							<article id="accessibility">
@@ -180,37 +198,28 @@
 
 							<article id="fullscale">
 								<h2>Playing in a Large Space</h2>
-								To keep you safe while playing VR games in a small space, the Meta Quest has a feature called the Guardian Boundary, which provides an in-game grid wall to tell you when you're leaving your designated playspace.
-								<span class="image main"><img src="images/Boundary.png" alt="" /></span>
-								You may use Catastriphic Inversion with the Guardian enabled as a traditional standing/roomscale game... <b>but</b> we built it to be a game you could take to a gym and really move around in. 
-								<span class="image main"><img src="images/Space.png" alt="" /></span>
-								Our game has its own boundary system that allows you to define the edges of your safe playspace, and it will automatically align maps within that space. It will only allow you to play maps that are the same size as (or smaller than) your space.<br>
-								We have a few maps that fit within the max Guardian size of 10m x 10m, <b>but the best maps require the Guardian to be disabled.</b><br><br>We built a version of the game that <b>automatically disables the Guardian <i>for our game only</i></b> (leaving it
-								enabled for other games) but it's using an older plugin and Meta won't allow it on the main channel on the store yet. We will upgrade the plugin soon so this feature will be available by default. In the meantime, if you wish to play in a large space, you will need to do a little bit of
-								work yourself. It is worth saying that <b  style="color: red;">this removes some of the safeguards Meta has in-place. It carries some risk, which you bear the responsibility for.</b> Though we have done everything we can to make the game safe, without that os-level safeguard, headsets can (on rare occasions) come unaligned, leading to possible collisions. So far, no headsets have been damaged and no players have been severely injured.<br>
-								<br>If you choose to proceed, there's an easy way and a hard way.<br><br>
+								<br>Catastrophic Inversion disables the Guardian Boundary temporarily to allow you to play in much larger spaces than the default 33' x 33' (10m x 10m), using its own boundary system which measures your space and lines up appropriately sized maps. The boundary is re-enabled when the game is closed.<br>
+								<span class="image main"><img src="images/SmallVsLarge.png" alt="" /></span>
+								<b  style="color: red;">Disabling one of Meta's safety features carries some risk, which you bear the responsibility for.</b> In previous versions of the game, headsets have occasionally come misaligned leading to minor collisions (no injury or damage, just some startled players), but we now have several additional checks in place to prevent this from happening and have not had any collisions in our testing since these checks were added.<br><br>
+								Due to the boundary being disabled, we have disabled Joystick and teleport locomotion in this version of the game.<br><br>
 								<details>
-								<summary><b>The Easy Way</b></summary>
-								Games on Meta Quest can have different release channels, allowing players to opt-in to testing different versions of the game. We've put our boundaryless version of the game on the RC Channel. You can switch to the RC channel from the game's settings in the App menu in the Meta Quest home.
+								<summary><b>What if I want to play at home with joysticks or teleporting?</b></summary>
+								Games on Meta Quest can have different release channels, allowing players to opt-in to testing different versions of the game. We've put a traditional version of the game with joysticks and teleporting on the RC Channel. You can switch to the RC channel from the game's settings in the App menu in the Meta Quest home.
 								<span class="image main"><img src="images/JoinBoundaryless.png" alt="" /></span>
-								Please Note:
-								<ul>
-								<li>This version of the game will not allow you to play in standing/roomscale because the boundary is permanently disabled. You will need to switch back to the <b>Live</b> channel to play stationary.</li>
-								<li>When travelling ~25m with the boundary automatically disabled, there's an OS-level pop-up saying "you've travelled too far". You can ignore it and pop back into the game, but this takes you out of the experience and can get kind of annoying.<br>
-								Our basketball-court-sized 14m x 24m maps are small enough to avoid this message, but if you want to play the biggest maps, you will need to opt for the hard way.</li>
-								</ul>
+								We plan to merge both of these features in a future version of the game so you do not need to switch back and forth.
 								</details>
 								<br>
 								<details>
-								<summary><b>The Hard Way</b></summary>
+								<summary><b>Players are receiving pop-ups saying <i>"You've moved too far"</i></b></summary>
+								Unfortunately Meta's boundaryless mode still doesn't want you walking too far from the start. These pop-ups go away almost entirely if you power up the headsets from the middle of your playspace (we have found most success by storing the headsets on a table just outside of bounds on the long edge of our space.)
+								<span class="image main"><img src="images/IdealSpaceSetup.png" alt="" /></span>
+								If you are playing in a particularly large space or have to store your headsets farther away, these pop-ups may be unavoidable. They don't generally cause any major issues beyond an annoyance, so you can just close them and keep on playing, or you can completely eliminate them by <i><b>fully disabling physical space features through developer mode.</i></b> <br><br>
 								Putting your headset in Developer Mode allows a host of new features that you couldn't previously do. This includes sideloading apps from unofficial stores, modding existing apps, and <b>manually disabling the Guardian Boundary</b>.
 								Anyone can put their headset in Developer Mode. <i>You do not have to be a developer</i>. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.) <br>You can follow <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions on the Meta Website</a>.
 								<br><br>
 								Once your headset is in Developer Mode, you can disable the boundary by going to the <b> Settings App > Advanced > Disable Physical Space Features</b>.<br>
-								Please note:
-								<ul>
-								<li>Once your boundary is disabled <b  style="color: red;">it will be disabled in ALL games. You will not get a warning that it isn't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable it when you stop playing Catastrophic Inversion. We provide a warning when you are switching to stationary mode, and when clicking the <i>Quit</i> button in-game, but if you simply close the game, you will receive no such warning.</li>
-								</ul>
+								<br>
+								Once your boundary is disabled <b  style="color: red;">it will be disabled in ALL games. You will not get a warning that it isn't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable it when you stop playing Catastrophic Inversion.
 								</details>
 								
 							</article>
