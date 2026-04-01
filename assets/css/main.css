@@ -597,7 +597,21 @@ input, select, textarea {
 			border-radius: 0;
 			padding: 0;
 		}
+.video-container {
+  position: relative; /* Essential for positioning the iframe inside */
+  width: 100%; /* Ensures the container uses available horizontal space */
+  padding-bottom: 56.25%; /* Calculates height based on width to maintain 16:9 aspect ratio (9 / 16 = 0.5625) */
+  height: 0; /* Ensures the padding determines the height */
+  overflow: hidden;
+}
 
+.video-container iframe {
+  position: absolute; /* Positions the iframe relative to its container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the iframe fill the container's width */
+  height: 100%; /* Makes the iframe fill the container's calculated height */
+}
 /* Icon */
 
 	.icon {
