@@ -612,6 +612,12 @@ input, select, textarea {
   width: 100%; /* Makes the iframe fill the container's width */
   height: 100%; /* Makes the iframe fill the container's calculated height */
 }
+details summary > h3 {
+    display: inline;
+}
+details summary > h2 {
+    display: inline;
+}
 /* Icon */
 
 	.icon {
