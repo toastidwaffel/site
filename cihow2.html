@@ -31,7 +31,7 @@
 						<nav>
 							<ul>
 								<li><a href="#play">Play the game</a></li>
-								<li><a href="#temp">Host the game</a></li>
+								<li><a href="#host">Host the game</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -417,7 +417,7 @@
 										You can set a headset to <b>Guest Mode</b>, turning off the host button on the title screen and avoiding confusion for new guests.<br></br>
 										There are also some options for helping catch cases where the headset has come unaligned <i>(which can possibly happen if the headset is removed or put to sleep)</i>. We have these set to our recommended values, but feel free to adjust as needed.<br></br>
 
-										There's also a settings to help with <b>Boundaryless Mode</b>. By default, the game enables Boundaryless Mode, which turns off the <b>Guardian Boundary</b> <i>(which limits your space to 10 x 10 meters / 33 x 33 feet)</i>. In favor of our in-game calibration system made for larger spaces.<br></br>
+										<b>Check For Headset Centerpoint</b> is a setting to help with <b>Boundaryless Mode</b>. By default, the game enables Boundaryless Mode, which turns off the <b>Guardian Boundary</b> <i>(which limits your space to 10 x 10 meters / 33 x 33 feet)</i>. In favor of our in-game calibration system made for larger spaces.<br></br>
 											
 											Even with this enabled, Meta still provides annoying pop-ups when you've travelled 20m or so from the headset's origin point.
 											<span class="image main">
@@ -431,12 +431,10 @@
 										</span>
 										If that's not possible in your space, you can reset the origin point by leaving the game, creating a guardian boundary in the middle of the space, and re-joining.<br>
 											You would then set the Centerpoint check to <b>Before Calibrating</b> so they can see the centerpoint every time and move if needed.<br></br>
-											If you are playing in a particularly large space or have to store your headsets farther away, these pop-ups may be unavoidable. They don't generally cause any major issues beyond an annoyance, so you can just close them and keep on playing, or you can completely eliminate them by <i>
-												<b>fully disabling physical space features through developer mode.
-													</i></b> <br>
-												<br>
+											If you are playing in a particularly large space or have to store your headsets farther away, these pop-ups may be unavoidable. They don't generally cause any major issues beyond an annoyance, so you can just close them and keep on playing, or you can completely eliminate them by <i><b>fully disabling Physical Space Features through developer mode.</i></b> <br>
+											If you do this, you will want to set the centerpoint check to <b>Disabled</b>.<br></br>
 													<details>
-														<summary><b>About Developer Mode</b></summary>
+														<summary><b>About Developer Mode & Disabling Physical Space Features </b></summary>
 													Putting your headset in Developer Mode allows a few features that you couldn't previously do, including: sideloading apps from unofficial stores, modding existing apps, and <b>manually disabling the Guardian Boundary</b>.
 													<br><b><i>Anyone</b></i> can put their headset in Developer Mode. <i>You do not have to be a developer</i>. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.)
 												</br>
@@ -445,7 +443,7 @@
 												</br>
 												Once your headset is in Developer Mode, you can disable the boundary by going to the <b> Settings App > Developer Settings > Disable Physical Space Features</b>.<br>
 													<br>
-														Once your boundary is disabled <b  style="color: red;">it will be disabled in ALL games. You will not get a warning that it isn't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable it when you stop playing Catastrophic Inversion.
+														Once Physical Space Features are disabled <b  style="color: red;">they will be disabled in ALL games. You will not get a warning that they aren't enabled when starting other games, which could result in a collision.</b> You will need to remember to manually re-enable them when you stop playing Catastrophic Inversion.
 													</details>
 													<br></br>
 													</div>
@@ -468,22 +466,22 @@
 												</span>
 		
 									The game will walk you through setting up the space, having you:<br></br>
-										Touch Each Corner
+										Touch each corner to measure the space;
 										<video preload="auto" autoplay="" muted="" loop="" width="100%">
 										<source src="images/CornerSet.mp4" type="video/mp4">
 							Your browser does not support HTML5 Video.
 						</video>
 										
 <span class="image main">
-											Touch Your Calibration Points
+											and Touch Your Calibration Points to align later without touching the corners.
 											<img src="images/CalPt.png" alt="" />
 									</span>
 											After the initial setup, <i><b>the other players will only need to touch the calibration points</b></i> to line up the game. <br></br>In addition, all participants will receive a copy of the space mapping on any game they join, so they can host a game in the same space later.<br></br>
 										As long as your points don't move, <i><b>your space mapping is usable indefinitely.</b></i>
-									
 
-								</div>
-				<br></br>
+											<br></br>
+										</div>
+
 							</details>
 
 							<details>
@@ -492,33 +490,40 @@
 								</summary>
 								<div style="margin-left:10%;">
 									When you're ready to host, you need to tell it how space will be handled.
-									You can choose between playing in shared space, individual  spaces, or allowing individual space players to join your shared space game.
+									You can choose between playing <b>Together in Large Space</b>, <b>Separate In Small Spaces</b>, or a <b>Large Space</b> game that allows <b>Separate, Small-Space</b> players to join.
 									<span class="image main">
-									<img src="images/how2/hostchoices.png" alt="" />
-								</span>
-									There's also an option for easy transfer of a space mapping from a headset to a PC (which can't map the space on its own).
+										<img src="images/how2/hostchoices.png" alt="" />
+									</span>
+									There's also an option for easy transfer of a space mapping from a headset to a PC (since you need a VR device to map the space).<br></br>
 
 									Once you're hosting a game, you will have some options for setting it up:
+									<span class="image main">
+									<img src="images/how2/servermenu.png" alt="" />
+								</span>
+									By default, it will <b><i>broadcast the game's info</i></b> across your local network allowing any other copy of the game to <b><i>auto-discover</i></b> your session and easily connect. You can turn this off to require participants to know your IP address to join.<br>
 
-									By default, it will broadcast the game across the network allowing any other copy of the game to auto-discover your session and easily connect. You can turn this off to require participants to know your IP address to join.
+									<i>Some enterprise networks block this kind of broadcast but most will still generally allow you to connect manually by IP.</i><br></br>
 
-									Some enterprise networks block this kind of broadcast but most will still generally allow you to connect manually by IP.
+									If your device has a <b>public IP</b> or you have set up port forwarding on your router, you can <b>host the game online</b>.<br> 
+										<i>Customized instructions for that are available in the same menu.</i><br></br>
 
-									If your device is set to use a public IP or port forwarding, you can host the game online. Customized instructions for that are available in the same menu.
-
-									This menu also lets you determine what maps are available to the guests. If your space is big enough for the full-court maps, the half-court maps disable themselves automatically, but you can re-enable them here if you really want to use them.
-
+									This menu also lets you determine <b><i>what maps are available</i></b> to the guests. If your space is big enough for the full-court maps, <i>the half-court maps disable themselves automatically</i>, saving guests from unwittingly picking a small, less interesting map... <i>but you can re-enable them here if you really want to use them</i>.<br></br>
 
 
-									This menu also allows you to create customized game mode presets.
 
+									This menu also allows you to create and save <b><i>customized game mode presets</i></b>.
+									<span class="image main">
+										<img src="images/how2/presets.png" alt="" />
+									</span>
 									You can also set what presets are available to your guests.
-									It defaults to a demo mode where only 4 basic game modes are available with a demo time limit, which you can set as the host.
+									It defaults to a <b><i>demo mode</i></b> where only 4 basic game modes are available with the same time limit, <i>(which you can set as the host)</i>.<br>
+									You can switch it to let them pick between <b>all presets</b>, or only your <b>custom presets</b>.<br></br>
 
-									You can switch it to let them pick between all presets, or only your custom presets,
-
-									For advanced players, you can activate a customization console in the VR environment and they can set the individual settings themselves.
-
+										<b><i>For advanced players</i></b>, you can activate a <b><i>customization console</i>
+										</b> in the VR environment and they can <i>set the individual settings themselves</i>.
+<span class="image main">
+										<img src="images/how2/vrruleset.png" alt="" />
+									</span>
 								</div>
 							</details>
 							<details>
@@ -526,8 +531,14 @@
 									<h3>Guest Training</h3>
 								</summary>
 								<div style="margin-left:10%;">
-									If you want to make sure your guests are trained up ahead of time, you can send them the link.
-									Alternatively, you can have <a href="Resources/CIHow2.pdf">These Posters</a> up which they can scan to take them to the instructions.
+									Things move a lot quicker if your guests know what they're doing.<br>
+										If you want to make sure your guests are trained up ahead of time, you can send them the link to the how-to page, which has videos and written instructions: <a href="https://toastidwaffel.com/cihow2#play">https://toastidwaffel.com/cihow2#play</a><br></br>
+										Alternatively or additionally, you can put up <a href="Resources/CIHow2.pdf">this printout</a>, which they can scan to take them to the instructions.
+										<span class="image main">
+											<a href="Resources/CIHow2.pdf">
+										<img src="images/how2/how2picture.png" alt="" />
+											</a>
+									</span>
 
 								</div>
 							</details>
