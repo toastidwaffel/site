@@ -8,328 +8,522 @@
 	<head>
 		<title>Catastrophic Inversion</title>
 		<link rel="icon" href="images/favicon.ico">
-		<meta property="og:image" content="images/CIPreview.png" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Bring Multiplayer VR to Any Gym">
-		<link rel="stylesheet" href="assets/css/main.css" />
-<style>
-.aspect-ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
+			<meta property="og:image" content="images/CIPreview.png" />
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<meta name="description" content="Bring Multiplayer VR to Any Gym">
+				<link rel="stylesheet" href="assets/css/main.css" />
+				<style>
+					.aspect-ratio {
+					position: relative;
+					width: 100%;
+					height: 0;
+					padding-bottom: 56.25%;
+					}
 
-.aspect-ratio iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-.video_container {
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+					.aspect-ratio iframe {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					}
+					.video_container {
+					overflow: hidden;
+					display: flex;
+					position: fixed;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: -1;
+					}
 
-.video_container video {
-    position: absolute;
-	background-attachment: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-}
-.review_section{
-	
-}
-}
-</style>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+					.video_container video {
+					position: absolute;
+					background-attachment: fixed;
+					top: 50%;
+					left: 50%;
+					min-width: 100%;
+					min-height: 100%;
+					width: auto;
+					height: auto;
+					transform: translate(-50%, -50%);
+					}
+					.review_section{
+
+					}
+					}
+				</style>
+				<noscript>
+					<link rel="stylesheet" href="assets/css/noscript.css" />
+				</noscript>
+			</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <div class="logo">
+			<!-- Header -->
+			<header id="header">
+				<!-- <div class="logo">
 							<span class="icon fa-gem"></span>
 						</div> -->
-						<div class="content">
-							<div class="inner">
-							<span class="image main"><img src="images/CITitleInline.png" alt="" /></span>
-								<p>Transform any gym into a VR battleground</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#about" onclick=document.getElementById("heroVideo").pause()>The Game</a></li>
-								
-								<li><a href="#events">Events</a></li>
-								<li><a href="#dev">The Devs</a></li>
-							</ul>
-						</nav>
-		
-					</header>
+				<div class="content">
+					<div class="inner">
+						<span class="image main">
+							<img src="images/CITitleInline.png" alt="" />
+						</span>
+						<p>Arena-Scale VR You Can Take Anywhere</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#about" onclick=document.getElementById("heroVideo").pause=""()>The Game</a>
+						</li>
 
-				<!-- Main -->
-					<div id="main">
+						<li>
+							<a href="#events">Events</a>
+						</li>
+						<li>
+							<a href="#dev">The Devs</a>
+						</li>
+					</ul>
+				</nav>
 
-					<!-- About -->
-					<article id="about">
-						<h3 style="text-align:center"><b>Watch your large space become a multi-level VR battleground</b>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About -->
+				<article id="about">
+					<h3 style="text-align:center">
+						<b>Transform any large space into a multi-level VR battleground</b>
 						<video preload="auto" autoplay="" muted="" loop="" width="100%">
-						<source src="images/MovingMaps.mp4" type="video/mp4">
+							<source src="images/MovingMaps.mp4" type="video/mp4">
 							
 							Your browser does not support HTML5 Video.
 						</video>
-						<b>Battle your friends in 10+ PVP Arenas</b>
-						<video preload="auto" autoplay="" muted="" loop="" width="100%">
-							<source src="images/ShortLoop.mp4" type="video/mp4">
-							Your browser does not support HTML5 Video.
-						</video>
-						<b>Explore and Survive Together or Alone in Adventure Mode</b>
-						<video preload="auto" autoplay="" muted="" loop="" width="100%">
-							<source src="images/AdventureClip.mp4" type="video/mp4">
-							Your browser does not support HTML5 Video.
-						</video></h4>
-						<h2 style="text-align:center">Reviews</h3>
-						<div style="color:#f0f0f0;">
-							<i>So much fun, an absolute blast! ...The fact that they pulled this off seems like a miracle.</i>
-						</div>
-						<div>
-							<b><a href="#gocast">The Gaming Outsider</a></b>
-						</div>
 						<br>
-						<div style="text-align:center">
-								<h2>Get The Game</h2>
-								<button onclick="location.href='https://www.meta.com/experiences/catastrophic-inversion/7360338234075836/'"><img src="images/MetaLogo.png" alt="" height=100%/></button>
-								<button onclick="location.href='https://store.steampowered.com/app/3620680/Catastrophic_Inversion/'"><img src="images/SteamLogo.png" alt="" height=100%/></button>
-							</div>	
-							<div style="text-align:center">
 							<br>
-							<h2>Setup</h2>
-							<a href="#setup">Check out some tips for setting up the game.</a>
-										</div>
-										<br>
-						<div style="text-align:center">
-						<h2>What's next?</h2>
-						<p>We're in the middle of a major version upgrade and re-work of the game. It may be a few more months before you see any updates, but when we're done, you should see easier setup, improved stability, better optimization, and then we should be able to get rolling on some fun updates.</p>
-						<a href="https://trello.com/b/bPMppRVW/roadmap-catastrophic-inversion">See the Developer's Roadmap</a><br>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScXWRQv-jplnoevSjttfm5WtxpZnIKIu1lPm5p-Ko1Z5WDYrA/viewform">Suggest a Feature / Report a Bug</a>
-						</div>
-					</article>
-
-						<article id="setup">
-													<h2 style="text-align:center">Recommended Setup</h2>
-<i>Expand headings for more info.</i>
-								<details>
-								<summary><b>Room Size</b></summary>
-								10x10 meter (33x33 feet) minimum. 24x14 meter (79x46 feet) recommended.
-								<span class="image main"><img src="images/RecommendedSpace.png" alt="" /></span>
-								</details>
-
-								<details>
-								<summary><b>Room Setup</b></summary>
-								<ol>
-								<li>Clear the entire playspace from any potential tripping hazards. Ensure spectators are unlikely to walk through the space.</li>
-								<li>Mark two <i>Calibration Points</i>. (We recommend large stickers labeled <i>one</i> and <i>two</i>.) For the most reliable calibration, these should be several meters apart and a few inches different in height.
-								<span class="image main"><img src="images/CalPt.png" alt="" /></span></li>
-								<li>The game temporarily disables the Gudardian boundary to allow you to play in a large enough space.
-								<span class="image main"><img src="images/SmallVsLarge.png" alt="" /></span>
-								Boundaryless mode will sometimes give a message saying <b><i>You've walked too far.</b></i> To avoid this, make sure the headset's starting point is close to the center of your space. If possible, store the headsets on a table in the middle of one of the long edges of your space.
-								<span class="image main"><img src="images/IdealSpaceSetup.png" alt="" /></span>
-								With this arrangement, we'd recommend setting <b><i> Check For Center</b></i> in Settings to <b><i>After Calibrating</b></i>. This will check to see how well centered it is after calibrating and only bother the player if it's enough to cause a problem.
-								<span class="image main"><img src="images/CenterOnCalibrate.png" alt="" /></span>
-								<details>
-								<summary><b>For rooms without enough side space for a side table...</b></summary>
-								Configure a small roomscale boundary in the center of your space and set <b><i> Check For Center</b></i> in Settings to <b><i>OnJoin</b></i>. This will make your guests check the center every time, which will help them quickly notice if it needs to be recentered, though a less-experienced guest may require assistance.
-								<span class="image main"><img src="images/CenterOnJoin.png" alt="" /></span>
-								<details>
-								<summary><b>For situations where managing a center boundary is also inconvenient...</b></summary>
-								You can enable Developer mode and disable <b><i>Physical Space Features</b></i> to remove the pop-up entirely, but <b style="color: red;">this will make the alignment less reliable and will need to be turned back on before playing any other games or you will risk an accident</b>.
-								<br><i>You do not have to be a developer</i> to use developer mode. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.) <br>You can follow <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions on the Meta Website</a>.
-								</details>
-								</details>
-								</li>
-								<li>Follow the in-game steps for marking off the corners to define your <b><i>playspace</b></i>.
+								<b>Fight your friends in a growing collection of PVP Arenas</b>
 								<video preload="auto" autoplay="" muted="" loop="" width="100%">
-							<source src="images/CornerSet.mp4" type="video/mp4">
+									<source src="images/ShortLoop.mp4" type="video/mp4">
 							Your browser does not support HTML5 Video.
 						</video>
-								</li>
-								</ol>
-								</details>
-
-								<details>
-								<summary><b>Stationary/Roomscale Gameplay For Small Spaces</b></summary>
-								We have an alternate version of the game available that uses the Guardian boundary and is played with joysticks/teleporting. This version is available on the <b>RC channel</b> of the game. You can switch to the <b>RC Channel</b> from the game's settings in the App menu in the Meta Quest home. Once you've switched to this version, you will need to uninstall and reinstall the game for it to take effect.
-								<span class="image main"><img src="images/JoinBoundaryless.png" alt="" /></span>
-								We plan to merge both of these features in a future version of the game so you do not need to switch back and forth.<br><br>
-								</details>
-
-								<details>
-								<summary><b>Special Considerations For Multiplayer</b></summary>
-								<ul>
-								<li>Multiplayer will auto-connect between devices on the same local network.</li> 
-								<li>There are no official online servers. If you intend to play online, you will need to host your own server. Follow in-game instructions for port forwarding if necessary.</li>
-								<li>The host of a game selects <b><i>Start a Game</b></i>. All other players select <b><i>Join a Game</b></i>. Guest mode can be set in the settings of any headset to remove the <b><i>Start a Game</b></i> option and avoid confusion for the other players.</li>
-								<li>One headset can host one or two additional headsets as guests. A PC with the <a href="https://store.steampowered.com/app/3620680/Catastrophic_Inversion/">Steam edition of the game</a> is recommended for hosting a large group. There is no hard limit, but about 8 players seems to be the best for a smooth game on our low-end gaming laptop... 8 players is a lot to manage anyways...<br>
-								The Steam version also provides an automatic Spectator Camera for people to watch while they're waiting to play.
-								<span class="image main"><img src="images/Spec.png" alt="" /></span></li>
-								<li>Your WiFi setup can limit capacity as well. Most networks should be fine for a small group, but we generally bring a pair of Wi-Fi 6 mesh routers with us wherever we play it just in case.</li>
-								<li>Our game engine doesn't seem capable of forcing the PC awake when running the server, so we've included a simple program if you need it called NoSleep.exe which will keep your PC awake while hosting. Remember to turn it off when you're done.</li>
-								</ul>
-								</details>
-						</article>
-						
-						<!-- headsets -->
-						<article id="headsets">
-							<div style="text-align:center">
-							<h2>Compatible Headsets</h2>
+								<br>
+									<br>
+										<b>Explore and Survive Together (or Alone) in Adventure Mode</b>
+										<video preload="auto" autoplay="" muted="" loop="" width="100%">
+											<source src="images/AdventureClip.mp4" type="video/mp4">
+							Your browser does not support HTML5 Video.
+						</video>
+										</h4>
+										<h2 style="text-align:center">Reviews</h3>
+					<div style="color:#f0f0f0;">
+						<i>So much fun, an absolute blast! ...The fact that they pulled this off seems like a miracle.</i>
+					</div>
+					<div>
+						<b>
+							<a href="#gocast">The Gaming Outsider</a>
+						</b>
+					</div>
+					<br>
+						<div style="text-align:center">
+							<h2>Get The Game</h2>
+							<button onclick="location.href='https://www.meta.com/experiences/catastrophic-inversion/7360338234075836/'">
+								<img src="images/MetaLogo.png" alt="" height="100"%/>
+							</button>
+							<button onclick="location.href='https://store.steampowered.com/app/3620680/Catastrophic_Inversion/'">
+								<img src="images/SteamLogo.png" alt="" height="100"%/>
+							</button>
+						</div>
+						<div style="text-align:center">
+							<br>
+								<h2>How To Play</h2>
+								<a href="cihow2">
+									Click here for detailed instructions for <b>Players</b> and <b>Hosts</b>
+								</a>.
 							</div>
-<p>We've tested the game on the three headsets listed below and it runs great on all of them. With each headset, you're also getting an amazing VR console that can also run <a href="https://www.meta.com/experiences/">a large collection of other games.</a>
-</p>
-							<span class="image main"><img src="images/Quests.png" alt="" /></span>
-
-							<h3>Quest 2</h3>
-							<ul>
-								<li><a href="https://www.ebay.com/sch/i.html?_nkw=quest+2">$100 - $150 on Secondhand Markets</a></li>
-								<li>Full-Color 4k screen for in-game visuals</li>
-								<li>Low-Res Black & White Cameras view the real-world in black and white in the pre-game lobby</li>
-							</ul>
-
-							<h3>Quest 3</h3>
-							<ul>
-								<li><a href="https://www.meta.com/quest/quest-3/buy-now/">$500 New </a> - <a href="https://www.meta.com/refurbished/quest-3">$375 Used</a></li>
-								<li>Most powerful Quest headset. Most long-term compatibility</li>
-								<li>Highest Resolution Quest Headset</li>
-								<li>Full-Color passthrough camera for viewing the real world in the pre-game lobby</li>
-							</ul>
-
-							<h3>Quest 3S</h3>
-							<ul>
-								<li><a href="https://www.meta.com/quest/quest-3s/buy-now/">$300 New</a> - <a href="https://www.meta.com/refurbished/quest-3s/">$280 Used</a></li>
-								<li>Same power & compatibility as Quest 3</li>
-								<li>Same screen as Quest 2</li>
-								<li>Same passthrough camera as Quest 3</li>
-							</ul>
+						<br>
+							<div style="text-align:center">
+								<h2>What's next?</h2>
+								<a href="https://trello.com/b/bPMppRVW/roadmap-catastrophic-inversion">See the Developer's Roadmap</a>
+								<br>
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLScXWRQv-jplnoevSjttfm5WtxpZnIKIu1lPm5p-Ko1Z5WDYrA/viewform">Suggest a Feature / Report a Bug</a>
+								</div>
 						</article>
 
-						<!-- events -->					
-						<article id="events">
-						<h2 style="text-align:center">Upcoming Events</h2>
-						<p>We are not currently scheduled for any upcoming events. <br>Want us to join your gaming event? Reach out! <a href="mailto:info@toastidwaffel.com">info@toastidwaffel.com</a>
+				<article id="setup">
+					<h2 style="text-align:center">Recommended Setup</h2>
+					<i>Expand headings for more info.</i>
+					<details>
+						<summary>
+							<b>Room Size</b>
+						</summary>
+						10x10 meter (33x33 feet) minimum. 24x14 meter (79x46 feet) recommended.
+						<span class="image main">
+							<img src="images/RecommendedSpace.png" alt="" />
+						</span>
+					</details>
+
+					<details>
+						<summary>
+							<b>Room Setup</b>
+						</summary>
+						<ol>
+							<li>Clear the entire playspace from any potential tripping hazards. Ensure spectators are unlikely to walk through the space.</li>
+							<li>
+								Mark two <i>Calibration Points</i>. (We recommend large stickers labeled <i>one</i> and <i>two</i>.) For the most reliable calibration, these should be several meters apart and a few inches different in height.
+								<span class="image main">
+									<img src="images/CalPt.png" alt="" />
+								</span>
+							</li>
+							<li>
+								The game temporarily disables the Gudardian boundary to allow you to play in a large enough space.
+								<span class="image main">
+									<img src="images/SmallVsLarge.png" alt="" />
+								</span>
+								Boundaryless mode will sometimes give a message saying <b>
+									<i>You've walked too far.
+								</b></i> To avoid this, make sure the headset's starting point is close to the center of your space. If possible, store the headsets on a table in the middle of one of the long edges of your space.
+								<span class="image main">
+									<img src="images/IdealSpaceSetup.png" alt="" />
+								</span>
+								With this arrangement, we'd recommend setting <b>
+									<i> Check For Center
+								</b></i> in Settings to <b>
+									<i>After Calibrating
+								</b></i>. This will check to see how well centered it is after calibrating and only bother the player if it's enough to cause a problem.
+								<span class="image main">
+									<img src="images/CenterOnCalibrate.png" alt="" />
+								</span>
+								<details>
+									<summary>
+										<b>For rooms without enough side space for a side table...</b>
+									</summary>
+									Configure a small roomscale boundary in the center of your space and set <b>
+										<i> Check For Center
+									</b></i> in Settings to <b>
+										<i>OnJoin
+									</b></i>. This will make your guests check the center every time, which will help them quickly notice if it needs to be recentered, though a less-experienced guest may require assistance.
+									<span class="image main">
+										<img src="images/CenterOnJoin.png" alt="" />
+									</span>
+									<details>
+										<summary>
+											<b>For situations where managing a center boundary is also inconvenient...</b>
+										</summary>
+										You can enable Developer mode and disable <b>
+											<i>Physical Space Features
+										</b></i> to remove the pop-up entirely, but <b style="color: red;">this will make the alignment less reliable and will need to be turned back on before playing any other games or you will risk an accident</b>.
+										<br>
+											<i>You do not have to be a developer</i> to use developer mode. (You do need to create a placeholder development studio in Meta Quest, but it's not a lengthy process.) <br>
+												You can follow <a href="https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/">these instructions on the Meta Website</a>.
+											</details>
+								</details>
+							</li>
+							<li>
+								Follow the in-game steps for marking off the corners to define your <b>
+									<i>playspace
+								</b></i>.
+								<video preload="auto" autoplay="" muted="" loop="" width="100%">
+									<source src="images/CornerSet.mp4" type="video/mp4">
+							Your browser does not support HTML5 Video.
+						</video>
+							</li>
+						</ol>
+					</details>
+
+					<details>
+						<summary>
+							<b>Stationary/Roomscale Gameplay For Small Spaces</b>
+						</summary>
+						We have an alternate version of the game available that uses the Guardian boundary and is played with joysticks/teleporting. This version is available on the <b>RC channel</b> of the game. You can switch to the <b>RC Channel</b> from the game's settings in the App menu in the Meta Quest home. Once you've switched to this version, you will need to uninstall and reinstall the game for it to take effect.
+						<span class="image main">
+							<img src="images/JoinBoundaryless.png" alt="" />
+						</span>
+						We plan to merge both of these features in a future version of the game so you do not need to switch back and forth.<br>
+							<br>
+								
+					</details>
+
+					<details>
+						<summary>
+							<b>Special Considerations For Multiplayer</b>
+						</summary>
+						<ul>
+							<li>Multiplayer will auto-connect between devices on the same local network.</li>
+							<li>There are no official online servers. If you intend to play online, you will need to host your own server. Follow in-game instructions for port forwarding if necessary.</li>
+							<li>
+								The host of a game selects <b>
+									<i>Start a Game
+								</b></i>. All other players select <b>
+									<i>Join a Game
+								</b></i>. Guest mode can be set in the settings of any headset to remove the <b>
+									<i>Start a Game
+								</b></i> option and avoid confusion for the other players.
+							</li>
+							<li>
+								One headset can host one or two additional headsets as guests. A PC with the <a href="https://store.steampowered.com/app/3620680/Catastrophic_Inversion/">Steam edition of the game</a> is recommended for hosting a large group. There is no hard limit, but about 8 players seems to be the best for a smooth game on our low-end gaming laptop... 8 players is a lot to manage anyways...<br>
+									The Steam version also provides an automatic Spectator Camera for people to watch while they're waiting to play.
+									<span class="image main">
+										<img src="images/Spec.png" alt="" />
+									</span>
+							</li>
+							<li>Your WiFi setup can limit capacity as well. Most networks should be fine for a small group, but we generally bring a pair of Wi-Fi 6 mesh routers with us wherever we play it just in case.</li>
+							<li>Our game engine doesn't seem capable of forcing the PC awake when running the server, so we've included a simple program if you need it called NoSleep.exe which will keep your PC awake while hosting. Remember to turn it off when you're done.</li>
+						</ul>
+					</details>
+				</article>
+
+				<!-- headsets -->
+				<article id="headsets">
+					<div style="text-align:center">
+						<h2>Compatible Headsets</h2>
+					</div>
+					<p>
+						We've tested the game on the three headsets listed below and it runs great on all of them. With each headset, you're also getting an amazing VR console that can also run <a href="https://www.meta.com/experiences/">a large collection of other games.</a>
+					</p>
+					<span class="image main">
+						<img src="images/Quests.png" alt="" />
+					</span>
+
+					<h3>Quest 2</h3>
+					<ul>
+						<li>
+							<a href="https://www.ebay.com/sch/i.html?_nkw=quest+2">$100 - $150 on Secondhand Markets</a>
+						</li>
+						<li>Full-Color 4k screen for in-game visuals</li>
+						<li>Low-Res Black & White Cameras view the real-world in black and white in the pre-game lobby</li>
+					</ul>
+
+					<h3>Quest 3</h3>
+					<ul>
+						<li>
+							<a href="https://www.meta.com/quest/quest-3/buy-now/">$500 New </a> - <a href="https://www.meta.com/refurbished/quest-3">$375 Used</a>
+						</li>
+						<li>Most powerful Quest headset. Most long-term compatibility</li>
+						<li>Highest Resolution Quest Headset</li>
+						<li>Full-Color passthrough camera for viewing the real world in the pre-game lobby</li>
+					</ul>
+
+					<h3>Quest 3S</h3>
+					<ul>
+						<li>
+							<a href="https://www.meta.com/quest/quest-3s/buy-now/">$300 New</a> - <a href="https://www.meta.com/refurbished/quest-3s/">$280 Used</a>
+						</li>
+						<li>Same power & compatibility as Quest 3</li>
+						<li>Same screen as Quest 2</li>
+						<li>Same passthrough camera as Quest 3</li>
+					</ul>
+				</article>
+
+				<!-- events -->
+				<article id="events">
+					<h2 style="text-align:center">Upcoming Events</h2>
+					<p>
+						We are not currently scheduled for any upcoming events. <br>
+							Want us to join your gaming event? Reach out! <a href="mailto:info@toastidwaffel.com">info@toastidwaffel.com</a>
 							<h2 style="text-align:center">Recent Events</h2>
 							<h3 style="text-align:center">R2V2</h3>
-							<p><b>October 2024 & 2025:</b> We were thrilled to be part of the <a href="https://thegamingoutsider.com/r2v2/">Rock River Valley Video Game Convention (R2V2)</a> in Rockford Illinois for two years in a row. We had a blast and were happy to see a ton of people enjoy the game.</p>
-							<div style="text-align:center">
-							<span class="image main"><img src="images/R2V2Team3.jpg" alt="" /></span>
-							<span class="image main"><img src="images/R2V2Space.png" alt="" /></span>
-							<p><br>Hear about the experience from the convention hosts.
-							<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Fr4cTkwcf3Pfzw9bZsBX3?utm_source=generator&t=554" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-							</p></div>
-							</article>
-
-						<!-- dev -->
-						<article id="dev">
-							<h2 style="text-align:center">About The Developer</h2>
-							<span class="image main"><img src="images/TWFL Name.png" alt="" /></span>
-							<p>We are an independent studio operated by a solo developer with a little help from his friends. This is a hobby project, so we're moving a little slowly but focused on <i>fun</i>, not making faceless investors happy.
-							<br><br><b>Allen - </b>Development
-							<br><b>Emily - </b>Business
-							<br><b>Kevin - </b>Soundtrack
+							<p>
+								<b>October 2024 & 2025:</b> We were thrilled to be part of the <a href="https://thegamingoutsider.com/r2v2/">Rock River Valley Video Game Convention (R2V2)</a> in Rockford Illinois for two years in a row. We had a blast and were happy to see a ton of people enjoy the game.
 							</p>
-							<ul class="icons">
-							<li><a href="mailto:info@toastidwaffel.com" class="icon fas fa-envelope"><span class="label">Email</span></a></li>	
-							<li><a href="https://m.youtube.com/@ToastidWaffel" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-								<li><a href="https://www.facebook.com/profile.php?id=61565481809120" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://x.com/ToastidWaffel" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<!--<li><a href="https://bsky.app/profile/toastidwaffel.com" class="icon brands bluesky"><span class="label"></span></a></li> -->
-							</ul>
-							If you want to support us, <a href="#tip">here are a few ways.</a>
-						</article>
-						<article id="tip">
 							<div style="text-align:center">
-								<p>As a small independent studio funded by our day jobs, any support is greatly appreciated. Thank you!<br> To help:
-								
-								<h3><a href="#about">buy the game</a></h3> 
-								or<br><br>
-								<h3>leave a tip:</h3>
-								<button onclick="location.href='https://www.paypal.biz/toastidwaffeldev'"><img src="images/PayPalLogo.png" alt="" height=100%/></button>
-								<button onclick="location.href='https://www.venmo.com/u/toastidwaffel'"><img src="images/venmoLogo.png" alt="" height=100%/></button>
-								<br><br>
-								or
-								<br><br>
-								<h3>Spread The Word</h3>
-								<ul class="icons">
-							<li><a href="mailto:info@toastidwaffel.com" class="icon fas fa-envelope"><span class="label">Email</span></a></li>	
-							<li><a href="https://m.youtube.com/@ToastidWaffel" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-								<li><a href="https://www.facebook.com/profile.php?id=61565481809120" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://x.com/ToastidWaffel" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<!--<li><a href="https://bsky.app/profile/toastidwaffel.com" class="icon brands bluesky"><span class="label"></span></a></li> -->
-							</ul>
-								</p>
-							</div>			
+								<span class="image main">
+									<img src="images/R2V2Team3.jpg" alt="" />
+								</span>
+								<span class="image main">
+									<img src="images/R2V2Space.png" alt="" />
+								</span>
+								<p>
+									<br>
+										Hear about the experience from the convention hosts.
+										<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Fr4cTkwcf3Pfzw9bZsBX3?utm_source=generator&t=554" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+									</p>
+							</div>
 						</article>
-						
-						<article id="gocast">
-							<h2 style="text-align:center">The Gaming Outsider</h2>
-							<p>Catastrophic Inversion was featured at the <a href="https://thegamingoutsider.com/r2v2/">Rock River Valley Video Game Convention</a> hosted by <a href="https://thegamingoutsider.com/">The Gaming Outsider Podcast</a>.
-<br>						<br>They discuss their initial experience playing the game in this episode of their podcast:
-							<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0joYI3VRHy2zsW4Ko9c6hY?utm_source=generator&t=177" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+				<!-- dev -->
+				<article id="dev">
+					<h2 style="text-align:center">About The Developer</h2>
+					<span class="image main">
+						<img src="images/TWFL Name.png" alt="" />
+					</span>
+					<p>
+						We are an independent hobby studio operated by a solo developer with a little help from his friends.<br></br>
+						We value our players' time and enjoyment. You will never find obtrusive ads, arbitrary paywalls, time-sucking grinds, LLM-generated content, or unsustainable services in any of our games.
+						<h2 style="text-align:center">The Team</h2>
+						<b>
+							<a href="#allen">Allen - </b>Development</a>
+						<br>
+							<b>Emily - </b>Business
 							<br>
-							<br>They talk about it again after the convention in this episode:
-							<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Fr4cTkwcf3Pfzw9bZsBX3?utm_source=generator&t=554" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+								<b>Kevin - </b>Soundtrack
 							</p>
-						</article>
+					<ul class="icons">
+						<li>
+							<a href="mailto:info@toastidwaffel.com" class="icon fas fa-envelope">
+								<span class="label">Email</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://m.youtube.com/@ToastidWaffel" class="icon brands fa-youtube">
+								<span class="label">YouTube</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/profile.php?id=61565481809120" class="icon brands fa-facebook-f">
+								<span class="label">Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://x.com/ToastidWaffel" class="icon brands fa-twitter">
+								<span class="label">Twitter</span>
+							</a>
+						</li>
+						<!--<li><a href="https://bsky.app/profile/toastidwaffel.com" class="icon brands bluesky"><span class="label"></span></a></li> -->
+					</ul>
+					If you want to support us, <a href="#tip">here are a few ways.</a>
+				</article>
+				<article id="tip">
+					<div style="text-align:center">
+						<p>
+							As a small independent studio funded by our day jobs, your support is greatly appreciated. Thank you!<br>
+								To help:
 
+								<h3>
+									<a href="#about">buy the game</a>
+								</h3>
+								or<br>
+									<br>
+										<h3>leave a tip:</h3>
+										<button onclick="location.href='https://www.paypal.biz/toastidwaffeldev'">
+											<img src="images/PayPalLogo.png" alt="" height="100"%/>
+										</button>
+										<button onclick="location.href='https://www.venmo.com/u/toastidwaffel'">
+											<img src="images/venmoLogo.png" alt="" height="100"%/>
+										</button>
+										<br>
+											<br>
+												or
+												<br>
+													<br>
+														<h3>Spread The Word</h3>
+														<ul class="icons">
+															<li>
+																<a href="mailto:info@toastidwaffel.com" class="icon fas fa-envelope">
+																	<span class="label">Email</span>
+																</a>
+															</li>
+															<li>
+																<a href="https://m.youtube.com/@ToastidWaffel" class="icon brands fa-youtube">
+																	<span class="label">YouTube</span>
+																</a>
+															</li>
+															<li>
+																<a href="https://www.facebook.com/profile.php?id=61565481809120" class="icon brands fa-facebook-f">
+																	<span class="label">Facebook</span>
+																</a>
+															</li>
+															<li>
+																<a href="https://x.com/ToastidWaffel" class="icon brands fa-twitter">
+																	<span class="label">Twitter</span>
+																</a>
+															</li>
+															<!--<li><a href="https://bsky.app/profile/toastidwaffel.com" class="icon brands bluesky"><span class="label"></span></a></li> -->
+														</ul>
+													</p>
 					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-
-						<span class="copyright">
-							<div><a href="policies">Policies</a> <span>&#8226;</span> <a href="support">Receive Support</a></div>
-							<div>Website Template: <a href="https://html5up.net">HTML5 UP</a></div>
-							<div>&copy;2023-2025 <a href="#dev">Toastid Waffel LLC.</a></div>
-						</span>
-
-					</footer>
+				</article>
+				<article id="allen">
+					<h2 style="text-align:center">About Our Team</h2>
+					<span class="image main" style="width: 30%; height: auto;">
+						<img src="images/allen.png" alt="" />
+						<h3 style="text-align:center">Allen</h3>
+					</span>
+					<p>
+						Co-founder (with his wife) of the development studio <a href="#dev">Toastid Waffel</a> and the solo-developer of its debut game, <a href="#about">Catastrophic Inversion</a>.
+						He has a degree in Computer Science and works in IT.<br></br>
+						A little about Allen:
+						<ul>
+							<li>He has made several small games as student projects, but Catastrophic Inversion is his first attempt at a full-feature game.</li>
+							<li>
+								Occasionally teaches summer classes in introductory game design to middle/high school students</a>.
+							</li>
+							<li>He volunteers as a leader in his church's youth program.</li>
+							<li>His remaining free time is spent with his wife, kids, and cat.</li>
+						</ul>
+						Allen's top 5 favorite games are:
+						<ol>
+							<li>Grand Theft Auto IV</li>
+							<li>Halo 2</li>
+							<li>Minecraft</li>
+							<li>Red Matter 2</li>
+							<li>Time Splitters: Future Perfect</li>
+						</ol>
+					</p>
+				</article>
+				<article id="gocast">
+					<h2 style="text-align:center">The Gaming Outsider</h2>
+					<p>
+						Catastrophic Inversion was featured at the <a href="https://thegamingoutsider.com/r2v2/">Rock River Valley Video Game Convention</a> hosted by <a href="https://thegamingoutsider.com/">The Gaming Outsider Podcast</a>.
+						<br>
+							<br>
+								They discuss their initial experience playing the game in this episode of their podcast:
+								<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0joYI3VRHy2zsW4Ko9c6hY?utm_source=generator&t=177" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+								<br>
+									<br>
+										They talk about it again after the convention in this episode:
+										<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Fr4cTkwcf3Pfzw9bZsBX3?utm_source=generator&t=554" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+									</p>
+				</article>
 
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+
+				<span class="copyright">
+					<div>
+						<a href="policies">Policies</a>
+						<span>&#8226;</span>
+						<a href="support">Receive Support</a>
+					</div>
+					<div>
+						Website Template: <a href="https://html5up.net">HTML5 UP</a>
+					</div>
+					<div>
+						&copy;2023-2026 <a href="#dev">Toastid Waffel LLC.</a>
+					</div>
+				</span>
+
+			</footer>
+
+		</div>
+
 		<!-- BG -->
-				
-					<div class="video_container">
-    <video preload="auto" playsinline="" autoplay="" muted="" loop="" id="heroVideo" width=100% width=100vw>
-            <source src="images/CILoop.mp4" type="video/mp4">
+
+		<div class="video_container">
+			<video preload="auto" playsinline="" autoplay="" muted="" loop="" id="heroVideo" width="100"% width="100vw">
+				<source src="images/CILoop.mp4" type="video/mp4">
             Your browser does not support the video tag.
     </video>
-</div>
-		
-			<div id="bg"></div>
-			<div id="bg2"></div>
+		</div>
 
-			
+		<div id="bg"></div>
+		<div id="bg2"></div>
+
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 
